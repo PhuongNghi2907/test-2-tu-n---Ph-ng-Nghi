@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CARO</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript">
+	var players=[];
+	var markers= ["X","O"];
+	var whoseTurn= 0;
+	players[0]= "Nghi";
+	players[1]= "Mi";
+
+	function play(ClickedDiv){
+		ClickedDiv.onclick="";
+		ClickedDiv.innerHTML="<span>"+markers[whoseTurn]+"</span>";
+		change();
+	}
+	function change()
+	{
+		if (whoseTurn == 0) whoseTurn= 1;
+		else whoseTurn= 0;
+		document.getElementById("game").innerText=players[whoseTurn]+"'s Turn!";
+	}
+</script>
+</head>
+<body>
+	<h1 id="game">GAME CARO</h1>
+		<div class="container">
+		<div class="row1" onclick="play(this)"></div>
+		<div class="row2" onclick="play(this)"></div>
+		<div class="row3" onclick="play(this)"></div>
+		<div class="row4" onclick="play(this)"></div>
+		<div class="row5" onclick="play(this)"></div>
+		<div class="row6" onclick="play(this)"></div>
+		<div class="row7" onclick="play(this)"></div>
+		<div class="row8" onclick="play(this)"></div>
+		<div class="row9" onclick="play(this)"></div> <br>	
+		<button id="Reset" onclick="init()">Reset</button>
+</body>
+</html>

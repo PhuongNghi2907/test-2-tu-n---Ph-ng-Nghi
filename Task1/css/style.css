@@ -1,0 +1,67 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	text-align:center;
+	color: red;
+}
+.container{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 300px;
+	font-family: 'Tahoma', cursive;
+	user-select: none;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: 100px 100px 100px;
+	grid-template-areas: 
+	"row1 row2 row3"
+	"row4 row5 row6"
+	"row7 row8 row9";
+}
+span{
+	font-size: 60px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.row1{
+	grid-area: row1;
+	border-right: 2px solid black;
+}
+.row2{
+	grid-area: row2;
+	border-right: 2px solid black;
+}
+.row3{
+	grid-area: row3;
+}
+.row4{
+	grid-area: row4;
+	border-right: 2px solid black;
+	border-top: 2px solid black;
+}
+.row5{
+	grid-area: row5;
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+}
+.row6{
+	grid-area: row6;
+	border-top: 2px solid black;
+}
+.row7{
+	grid-area: row7;
+	border-top:2px solid black;
+	border-right: 2px solid black;
+}.row8{
+	grid-area: row8;
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+}
+.row9{
+	grid-area: row9;
+	border-top: 2px solid black;
+}
+
+
